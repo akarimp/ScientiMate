@@ -8,38 +8,37 @@
 Welcome to ScientiMate's documentation!
 =======================================
 
-Earth-Science Data Analysis Library
+ScientiMate is a library for earth-science data analysis. This library can be used for wide range of data analysis including a time series analysis, signal processing, and geo-data calculation.
 
-Python Library
-
-:Developer: Arash Karimpour
-:Website: http://www.arashkarimpour.com
-:Download: http://www.arashkarimpour.com/scientimate.html
-:Documentation: https://oceanlyz.readthedocs.io
-:Tutorial videos: https://www.youtube.com/playlist?list=PLcrFHi9M_GZRTCshcgujlK7y5ZPim6afM
-:Source code: https://github.com/akarimp/oceanlyz
-:Report issues: https://github.com/akarimp/oceanlyz/issues
+:Name: ScientiMate
+:Description: Earth-Science Data Analysis Library
 :Version: 1.0
-
-.. :Date: August, 2020
-
-|
-
-ScientiMate is a library for earth-science data analysis. This library is written in both Python and Matlab/GNU Octave. This library can be used for wide range of data analysis including a time series analysis, signal processing, and geo-data calculation.
+:Requirements: Python (3 or later), NumPy, SciPy, Matplotlib
+:Developer: Arash Karimpour (http://www.arashkarimpour.com)
+:Documentation: https://scientimate.readthedocs.io
+:Tutorial Video: `YouTube Playlist <https://www.youtube.com/playlist?list=PLcrFHi9M_GZRTCshcgujlK7y5ZPim6afM>`_
+:Source Code: https://github.com/akarimp/scientimate
+:Report Issues: https://github.com/akarimp/scientimate/issues
 
 .. toctree::
     :maxdepth: 2
 
     1_Introduction.rst
 
-Recommended Book
-----------------
+Recommended Books
+-----------------
 
-For more details on coastal and ocean wave data analysis refer to:
-
-Karimpour A., (2018), Ocean Wave Data Analysis: Introduction to Time Series Analysis, Signal Processing, and Wave Prediction, KDP.
-
-Book link: https://www.amazon.com/dp/0692109978
+* | **Ocean Wave Data Analysis**
+  | Introduction to Time Series Analysis, Signal Processing, and Wave Prediction.
+  | Order at Amazon: https://www.amazon.com/dp/0692109978
+  |
+* | **Principles of Data Science with Python**
+  | Introduction to Scientific Computing, Data Analysis, and Data Visualization.
+  | Order at Amazon: https://www.amazon.com/dp/1735241008
+  |
+* | **Fundamentals of Data Science with MATLAB**
+  | Introduction to Scientific Computing, Data Analysis, and Data Visualization.
+  | Order at Amazon: https://www.amazon.com/dp/1735241016
 
 
 .. Indices and tables
