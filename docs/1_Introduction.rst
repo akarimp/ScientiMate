@@ -3,14 +3,20 @@ Introduction
 
 ScientiMate is a library for earth-science data analysis. This library is written in both Python and Matlab/GNU Octave. This library can be used for wide range of data analysis including a time series analysis, signal processing, and geo-data calculation.
 
-Recommended Book
-----------------
+Recommended Books
+-----------------
 
-For more details on coastal and ocean wave data analysis refer to:
-
-Karimpour A., (2018), Ocean Wave Data Analysis: Introduction to Time Series Analysis, Signal Processing, and Wave Prediction, Amazon KDP.
-
-Book link: https://www.amazon.com/dp/0692109978
+* | **Ocean Wave Data Analysis**
+  | Introduction to Time Series Analysis, Signal Processing, and Wave Prediction.
+  | Order at Amazon: https://www.amazon.com/dp/0692109978
+  |
+* | **Principles of Data Science with Python**
+  | Introduction to Scientific Computing, Data Analysis, and Data Visualization.
+  | Order at Amazon: https://www.amazon.com/dp/1735241008
+  |
+* | **Fundamentals of Data Science with MATLAB**
+  | Introduction to Scientific Computing, Data Analysis, and Data Visualization.
+  | Order at Amazon: https://www.amazon.com/dp/1735241016
 
 Citation
 --------
