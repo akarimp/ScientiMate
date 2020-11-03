@@ -19,7 +19,36 @@ ScientiMate is a library for earth-science data analysis. This library can be us
 Installation
 ------------
 
-Available soon
+To use ScientiMate package:
+
+* Install Python
+* Install ScientiMate
+
+**1) Install Python**
+
+First, we need to install Python programming language.
+
+* Method 1:
+    Install pure Python from https://www.python.org and then use the **pip** command to install required packages
+* Method 2 (Recommended):
+    Install Anaconda Python distribution from https://www.anaconda.com and then use the **conda** command to install required packages
+
+**2) Install ScientiMate**
+
+After Python is installed, we need to install ScientiMate package.
+
+To install ScientiMate via pip (https://pypi.org/project/scientimate):
+
+.. code:: python
+
+    pip install scientimate
+
+To install ScientiMate via Anaconda cloud (https://anaconda.org/akarimp/scientimate):
+
+.. code:: python
+
+     conda install -c akarimp scientimate
+
 
 Required Package for Python
 ---------------------------
