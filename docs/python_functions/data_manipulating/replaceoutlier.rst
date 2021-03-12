@@ -14,7 +14,7 @@ scientimate.replaceoutlier
 
 .. code:: python
 
-    xReplaced, outlier_Indx = scientimate.replaceoutlier(x, WindowSize=15, zscore_threshold=2, interpMethod'linear', dispout'no')
+    xReplaced, outlier_Indx = scientimate.replaceoutlier(x, WindowSize=15, zscore_threshold=2, interpMethod='linear', dispout'no')
 
 Description
 -----------
