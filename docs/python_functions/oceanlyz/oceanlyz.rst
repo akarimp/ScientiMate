@@ -103,10 +103,10 @@ fmaxpcorrCalcMethod='auto'
 
 Kpafterfmaxpcorr='constant'
     Define a pressure response factor, Kp, value for frequency larger than fmaxpcorr
-        | Kpafterfmaxpcorr='nochange': Kp is not changed for frequency larger than fmaxpcorr 
         | Kpafterfmaxpcorr='one': Kp=1 for frequency larger than fmaxpcorr 
         | Kpafterfmaxpcorr='constant': Kp for f larger than fmaxpcorr stays equal to Kp at fmaxpcorr (constant)
         | Only required if InputType='pressure' and AnalysisMethod='spectral'
+        | Kpafterfmaxpcorr='nochange': Kp is not changed for frequency larger than fmaxpcorr (Not implemented yet)
 
 fminpcorr=0.15
     Minimum frequency that automated calculated fmaxpcorr can have if fmaxpcorrCalcMethod='auto' in (Hz)
