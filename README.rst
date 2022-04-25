@@ -7,8 +7,8 @@ ScientiMate is a library for earth-science data analysis. This library can be us
 
 :Name: ScientiMate
 :Description: Earth-Science Data Analysis Library
-:Version: 1.0.5
-:Requirements: Python (3 or later), NumPy, SciPy, Matplotlib
+:Version: 1.1
+:Requirements: MATLAB, or GNU Octave, or Python (3 or later)
 :Developer: Arash Karimpour (http://www.arashkarimpour.com)
 :Documentation: https://scientimate.readthedocs.io
 :Tutorial Video: `YouTube Playlist <https://www.youtube.com/playlist?list=PLcrFHi9M_GZRTCshcgujlK7y5ZPim6afM>`_
@@ -16,8 +16,29 @@ ScientiMate is a library for earth-science data analysis. This library can be us
 :Report Issues: https://github.com/akarimp/scientimate/issues
 
 
-Installation
-------------
+Installation (MATLAB Version)
+-----------------------------
+
+To use MATLAB version of ScientiMate library:
+
+* Install MATLAB or GNU Octave
+* Download ScientiMate:
+
+    * Version 1.1 (GitHub): https://github.com/akarimp/ScientiMate/releases/download/1.1/scientimate.zip
+
+* Unzip ScientiMate in any location you choose such as "C:\\"
+* Open MATLAB or GNU Octave
+* Add ScientiMate folder to MATLAB or GNU Octave path
+
+**Add ScientiMate folder to MATLAB or GNU Octave path using add_scientimate_to_path.m**
+
+* Open MATLAB or GNU Octave
+* Change a current folder (working directory) to a folder that contains ScientiMate files, for example "C:\\scientimate", in MATLAB or GNU Octave.
+* Run a file named add_scientimate_to_path.m in MATLAB or GNU Octave to add ScientiMate folder to MATLAB or GNU Octave path.
+
+
+Installation (Python Version)
+-----------------------------
 
 To use ScientiMate package:
 
@@ -50,6 +71,39 @@ To install ScientiMate via Anaconda cloud (https://anaconda.org/akarimp/scientim
      conda install -c akarimp scientimate
 
 
+Required Programing Language
+----------------------------
+
+This library can be run by using MATLAB (https://www.mathworks.com), GNU Octave (https://www.gnu.org/software/octave), or Python (https://www.python.org). 
+
+
+Required Package for MATLAB
+---------------------------
+
+MATLAB users may need to install additional MATLAB Toolboxes such as Signal Processing Toolbox for some functions.
+
+
+Required Package for GNU Octave
+-------------------------------
+
+GNU Octave users may need to install/load additional packages such as GNU Octave Signal Package for some functions.
+
+For example, GNU Octave Signal Package can be loaded inside GNU Octave by using a following command in a command window (This should be done every time GNU Octave is opened):
+
+
+.. code:: octave
+    
+    >> pkg load signal
+
+
+If GNU Octave Signal Package is not already installed, it should be first installed from Octave Forge (https://octave.sourceforge.io), and then get loaded by using the following commands in a command window:
+
+.. code:: octave
+
+    >> pkg install -forge signal
+    >> pkg load signal
+
+
 Required Package for Python
 ---------------------------
 
@@ -60,8 +114,19 @@ Following packages are required:
 * Matplotlib (https://matplotlib.org)
 
 
-Quick Start
------------
+Quick Start (MATLAB Version)
+----------------------------
+
+.. code:: matlab
+
+    x(:,1)=linspace(1,10,10);
+    y(:,1)=1+rand(10,1);
+    y(:,2)=2+rand(10,1);
+    plot2d(x,y,'line_confid','blue_red','large')
+
+
+Quick Start (Python Version)
+----------------------------
 
 .. code:: python
 
@@ -97,7 +162,7 @@ Citation
 
 Cite this package as:
 
-Karimpour, A. (2020). ScientiMate, Earth-Science Data Analysis Library.
+Karimpour, A. (2022). ScientiMate, Earth-Science Data Analysis Library.
 
 
 License Agreement and Disclaimer
@@ -105,9 +170,7 @@ License Agreement and Disclaimer
 
 ScientiMate: Earth-Science Data Analysis Library
 
-Copyright (c) 2021 Arash Karimpour
-
-All rights reserved
+Copyright (c) 2022 Arash Karimpour
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
