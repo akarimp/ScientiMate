@@ -18,11 +18,11 @@
 # -- Project information -----------------------------------------------------
 
 project = 'ScientiMate'
-copyright = '2020, Arash Karimpour'
+copyright = '2022, Arash Karimpour'
 author = 'Arash Karimpour'
 
 # The full version, including alpha/beta/rc tags
-release = '1.0'
+release = '1.1'
 
 
 # -- General configuration ---------------------------------------------------
@@ -36,8 +36,8 @@ extensions = [
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
 
-# The master toctree document.
-master_doc = 'index'
+# The root toctree document.
+root_doc = 'index'
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.

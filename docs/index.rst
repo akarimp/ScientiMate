@@ -1,7 +1,7 @@
 .. YA LATIF
 
 .. ScientiMate documentation master file, created by
-   sphinx-quickstart on Mon Nov  2 16:48:26 2020.
+   sphinx-quickstart on Wed Apr 20 12:18:59 2022.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
@@ -12,8 +12,8 @@ ScientiMate is a library for earth-science data analysis. This library can be us
 
 :Name: ScientiMate
 :Description: Earth-Science Data Analysis Library
-:Version: 1.0
-:Requirements: Python (3 or later), NumPy, SciPy, Matplotlib
+:Version: 1.1
+:Requirements: MATLAB, or GNU Octave, or Python (3 or later)
 :Developer: Arash Karimpour (http://www.arashkarimpour.com)
 :Documentation: https://scientimate.readthedocs.io
 :Tutorial Video: `YouTube Playlist <https://www.youtube.com/playlist?list=PLcrFHi9M_GZRTCshcgujlK7y5ZPim6afM>`_
@@ -29,20 +29,22 @@ User Guide
     :maxdepth: 1
 
     1_Introduction.rst
-    2_Getting_Started.rst
+    2_Getting_Started_Matlab.rst
+    3_Getting_Started_Python.rst
 
 **Functions Reference**
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
 
-    3_API.rst
+    4_Functions_List_Matlab.rst
+    5_Functions_List_Python.rst
 
 .. toctree::
     :maxdepth: 1
 
-    4_Changelog.rst
-    5_Contribute.rst
+    6_Changelog.rst
+    7_Contribute.rst
 
 Recommended Books
 -----------------
