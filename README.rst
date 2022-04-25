@@ -7,7 +7,7 @@ ScientiMate is a library for earth-science data analysis. This library can be us
 
 :Name: ScientiMate
 :Description: Earth-Science Data Analysis Library
-:Version: 1.1
+:Version: 1.1.2
 :Requirements: MATLAB, or GNU Octave, or Python (3 or later)
 :Developer: Arash Karimpour (http://www.arashkarimpour.com)
 :Documentation: https://scientimate.readthedocs.io
