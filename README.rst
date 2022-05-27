@@ -13,7 +13,7 @@ ScientiMate is a library for earth-science data analysis. This library can be us
 :Documentation: https://scientimate.readthedocs.io
 :Tutorial Video: `YouTube Playlist <https://www.youtube.com/playlist?list=PLcrFHi9M_GZRTCshcgujlK7y5ZPim6afM>`_
 :Source Code: https://github.com/akarimp/scientimate
-:Report Issues: https://github.com/akarimp/scientimate/issues
+:Report Issues: https://github.com/akarimp/ScientiMate/issues
 
 
 Installation (MATLAB Version)
