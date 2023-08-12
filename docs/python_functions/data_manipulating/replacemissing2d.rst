@@ -1,0 +1,90 @@
+.. ++++++++++++++++++++++++++++++++YA LATIF++++++++++++++++++++++++++++++++++
+.. +                                                                        +
+.. + ScientiMate                                                            +
+.. + Earth-Science Data Analysis Library                                    +
+.. +                                                                        +
+.. + Developed by: Arash Karimpour                                          +
+.. + Contact     : www.arashkarimpour.com                                   +
+.. + Developed/Updated (yyyy-mm-dd): 2020-02-01                             +
+.. +                                                                        +
+.. ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+scientimate.replacemissing2d
+============================
+
+.. code:: python
+
+    xReplaced, NaN_Indx = scientimate.replacemissing2d(x, what2replace='both', gridsize_x=1, gridsize_y=1, interpMethod='nearest', dispout='no')
+
+Description
+-----------
+
+Replace missing data points in 2d array
+
+Inputs
+------
+
+x
+    Input data
+what2replace='both'
+    | What needs to be replaced
+    | 'NaN': replacing NaN data points
+    | 'Inf': replacing Inf data points
+    | 'both': replacing NaN and Inf data points
+    | Number: replacing data points equal to Number
+gridsize_x=1
+    | Grid size (distance between grid points) in x direction
+    | Leave gridsize_x=1 if you do not have it
+gridsize_y=1
+    | Grid size (distance between grid points) in y direction
+    | Leave gridsize_y=1 if you do not have it
+interpMethod='nearest'
+    | Interpolation method
+    | 'linear': Use default or 'linear' method to interpolate
+    | 'nearest': Use nearest neighbor method to interpolate
+    | 'knn': Use nearest neighbor method to interpolate (Use 'knn' for large array)
+dispout='no'
+    Define to display outputs or not ('yes': display, 'no': not display)
+
+Outputs
+-------
+
+xReplaced
+    Replaced data
+NaN_Indx
+    Logical index of replaced points
+
+Examples
+--------
+
+.. code:: python
+
+    import scientimate as sm
+    import numpy as np
+    from numpy import random
+
+    x=[[1,0,3],[2,5,np.nan],[3,np.nan,1],[5,7,2]]
+    xReplaced, NaN_Indx = sm.replacemissing2d(x, 'NaN', 1, 1, 'nearest', 'yes')
+
+    rng = np.random.default_rng()
+    xgrid=rng.normal(size=(100,50))
+    xgrid(rng.integers(0,99,(20,1)),rng.integers(0,49,(10,1)))=np.nan
+    xReplaced, NaN_Indx = sm.replacemissing2d(xgrid, 'NaN', 1, 1, 'knn', 'yes')
+
+References
+----------
+
+.. License & Disclaimer
+.. --------------------
+..
+.. Copyright (c) 2020 Arash Karimpour
+..
+.. http://www.arashkarimpour.com
+..
+.. THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+.. IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+.. FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+.. AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+.. LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+.. OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+.. SOFTWARE.
