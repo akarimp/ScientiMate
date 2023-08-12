@@ -1,6 +1,15 @@
 Changelog
 =========
 
+Version 2.0
+-----------
+
+What is new in ver 2.0:
+
+* All MATLAB and Python functions are added
+* Documentation is updated
+* Release date: 2023-08-11
+
 Version 1.1
 -----------
 

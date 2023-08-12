@@ -1,18 +1,22 @@
-Getting Started (MATLAB Version)
-================================
+Getting Started (MATLAB)
+========================
 
 In order to use MATLAB version of ScientiMate library, first, one of the MATLAB or GNU Octave programming language along with required toolboxes should be installed (Refer to required packages for MATLAB/GNU Octave). 
 
 
-Installation
-------------
+Installing
+----------
 
 To use MATLAB version of ScientiMate library:
 
 * Install MATLAB or GNU Octave
+
+    * MATLAB: https://www.mathworks.com
+    * GNU Octave: https://octave.org
+
 * Download ScientiMate:
 
-    * Version 1.1 (GitHub): https://github.com/akarimp/ScientiMate/releases/download/1.1/scientimate.zip
+    * Version 1.1 (GitHub): https://github.com/akarimp/ScientiMate/releases/download/2.0/scientimate.zip
     
 * Unzip ScientiMate in any location you choose such as "C:\\"
 * Add ScientiMate folder to MATLAB or GNU Octave path
@@ -25,24 +29,37 @@ You may access ScientiMate by copying ScientiMate files and its sub-folders to y
 However, a better option is to add ScientiMate folder to MATLAB or GNU Octave path. By doing that, you always have access to ScientiMate from any working directory.
 Remember, you need to add ScientiMate to path only once.
 
-To add ScientiMate folder to MATLAB or GNU Octave path, you may use a provided add_scientimate_to_path.m file or you can do it manually in the command window.
+To add ScientiMate folder to MATLAB or GNU Octave path, or remove it from the path, you may use one the following options:
 
-**Add ScientiMate folder to MATLAB or GNU Octave path using add_scientimate_to_path.m**
+* Add or remove the folder by using provided ``add_scientimate_to_path.m`` or ``remove_scientimate_from_path.m`` files
+* Add or remove the folder manually in the Command Window
+
+**Add ScientiMate folder to MATLAB or GNU Octave path by using add_scientimate_to_path.m**
+
+To add ScientiMate to MATLAB or GNU Octave path:
 
 * Open MATLAB or GNU Octave
 * Change a current folder (working directory) to a folder that contains ScientiMate files, for example "C:\\scientimate", in MATLAB or GNU Octave.
-* Run a file named add_scientimate_to_path.m in MATLAB or GNU Octave to add ScientiMate folder to MATLAB or GNU Octave path.
+* Run a file named ``add_scientimate_to_path.m`` in MATLAB or GNU Octave to add ScientiMate folder to MATLAB or GNU Octave path.
+
+To remove ScientiMate from MATLAB or GNU Octave path:
+
+* Open MATLAB or GNU Octave
+* Change a current folder (working directory) to a folder that contains ScientiMate files, for example "C:\\scientimate", in MATLAB or GNU Octave.
+* Run a file named ``remove_scientimate_from_path.m`` in MATLAB or GNU Octave to remove ScientiMate folder from MATLAB or GNU Octave path.
 
 **Add ScientiMate folder to MATLAB or GNU Octave path manually in the Command Window**
 
-For example, if ScientiMate files are in "C:\\scientimate" folder then it can be added to path as:
+For example, if ScientiMate files are in "C:\\scientimate" folder, then:
+
+To add ScientiMate to MATLAB or GNU Octave path, run following commands in the Command Window:
 
 .. code:: matlab
 
     ScientiMatePath = genpath('C:\scientimate'); %Generating path for ScientiMate folder and its sub-folders
     addpath(ScientiMatePath); %Add ScientiMate folder to path
 
-To remove ScientiMate from the path use:
+To remove ScientiMate from MATLAB or GNU Octave path, run following commands in the Command Window:
 
 .. code:: matlab
 
@@ -54,13 +71,13 @@ To remove ScientiMate from the path use:
 Operating System
 ----------------
 
-This code can be run on Windows, Mac and Linux. However, make sure any given path is compatible with a running operating system. In particular, “\\” is used in Windows path, while “/” is used in Mac or Linux path. For example, if a path is “C:\\” on Windows machine, it would be “C:/” on Mac or Linux.
+This code can be run on Microsoft Windows, Mac and Linux. However, make sure any given path is compatible with a running operating system. In particular, "\\" is used in Windows path, while "/" is used in Mac or Linux path. For example, if a path is "C:\\" on Windows machine, it would be "C:/" on Mac or Linux.
 
 
 Required Programing Language
 ----------------------------
 
-The MATLAB version of this toolbox can be run by using MATLAB (https://www.mathworks.com) or GNU Octave (https://www.gnu.org/software/octave). 
+The MATLAB version of this library can be run by using MATLAB (https://www.mathworks.com) or GNU Octave (https://octave.org). 
 
 
 Required Package for MATLAB
@@ -72,21 +89,24 @@ MATLAB users may need to install additional MATLAB Toolboxes such as Signal Proc
 Required Package for GNU Octave
 -------------------------------
 
-GNU Octave users may need to install/load additional packages such as GNU Octave Signal Package for some functions.
+GNU Octave users may need to install/load additional packages such as GNU Octave Signal package for some functions.
+To find the list of the GNU Octave's pre-installed packages, run the following command in the Command Window:
 
-For example, GNU Octave Signal Package can be loaded inside GNU Octave by using a following command in the command window (This should be done every time GNU Octave is opened):
+.. code:: octave
+    
+    >> pkg list
 
+For example, GNU Octave comes with Signal package but it needs to loaded every time GNU Octave starts. The Signal package can be loaded inside GNU Octave by running the following command in the Command Window (This should be done every time GNU Octave is opened):
 
 .. code:: octave
     
     >> pkg load signal
 
-
-If GNU Octave Signal Package is not already installed, it should be first installed from Octave Forge (https://octave.sourceforge.io), and then get loaded by using the following commands in the command window:
+If GNU Octave Signal Package is not already installed, it should be first installed from https://packages.octave.org, and then get loaded by running the following commands in the Command Window:
 
 .. code:: octave
 
-    >> pkg install -forge signal
+    >> pkg install "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/signal-1.4.5.tar.gz"
     >> pkg load signal
 
 
