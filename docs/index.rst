@@ -21,7 +21,7 @@ The examples of ScientiMate's applications are (but not limited to) ocean wave a
 :Tutorial Video: `YouTube Playlist <https://www.youtube.com/playlist?list=PLcrFHi9M_GZRTCshcgujlK7y5ZPim6afM>`_
 :Source Code: https://github.com/akarimp/ScientiMate
 :Report Issues: arkarimp@gmail.com
-:Help / Consultation: arkarimp@gmail.com
+:Help | Consultation: arkarimp@gmail.com
 
 User Guide
 ----------
